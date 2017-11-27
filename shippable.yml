@@ -1,0 +1,16 @@
+jobs:
+  - name: test_tag_release
+    type: runSh
+    steps:
+      - IN: test_tag_release_gr
+      - TASK:
+        - script: echo "hello"
+        
+resources:
+  - name: test_tag_release_gr
+    type: gitRepo
+    integration: github-manishas
+    pointer:
+      buildOnCommit: true
+      buildOnTagPush: true
+      buildOnRelease: true
