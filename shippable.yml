@@ -11,6 +11,8 @@ resources:
     type: gitRepo
     integration: github-manishas
     pointer:
+      sourceName: manishas/test-runsh-tag-release
+      branch: master
       buildOnCommit: true
       buildOnTagPush: true
       buildOnRelease: true
