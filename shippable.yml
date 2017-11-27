@@ -15,3 +15,13 @@ resources:
       buildOnCommit: true
       buildOnTagPush: true
       buildOnRelease: true
+      
+  - name: test_tag_release_gr1
+    type: gitRepo
+    integration: github-manishas
+    pointer:
+      sourceName: manishas/test-runsh-tag-release
+      buildOnCommit: true
+      buildOnTagPush: true
+      buildOnRelease: true      
+      
